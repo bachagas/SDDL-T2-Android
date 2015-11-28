@@ -32,7 +32,6 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 import lac.contextnet.model.EventObject;
 import lac.contextnet.model.PingObject;
-import lac.contextnet.sddl.usernode.R;
 
 /**
  * MainActivity: This is our application's MainActivity. It consists in 
@@ -258,7 +257,7 @@ public class MainActivity extends Activity {
                 PREF_SDDL_SERVER, Context.MODE_PRIVATE);
         addr = sharedPrefs.getString(PREF_SDDL_SERVER, null);
         if (addr == null) {
-            addr = "192.168.1.104:5555";
+            addr = "192.168.1.68:5500";
             Editor editor = sharedPrefs.edit();
             editor.putString(PREF_SDDL_SERVER, addr);
             editor.commit();
